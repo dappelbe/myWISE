@@ -103,6 +103,8 @@
 <!-- Volt JS -->
 <script src="{{url('/assets/js/volt.js')}}"></script>
 <!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="{{asset('js/datatables/datatables.min.css')}}"/>
+<script type="text/javascript" src="{{asset('js/datatables/datatables.min.js')}}"></script>
 
 @yield('pagejs')
 </body>
