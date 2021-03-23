@@ -27,7 +27,6 @@ services:
     restart: unless-stopped
     ports:
       - 8888:80
-      - 9000:9000
       - 9003:9003
     volumes:
       - ./www:/var/www/html
@@ -41,7 +40,6 @@ services:
     restart: unless-stopped
     ports:
       - 5000:80
-      - 5025:25
       - 5870:587
 #-- Uncomment if you wish to persist volumes
 #    volumes:
