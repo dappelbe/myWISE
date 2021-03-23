@@ -25,6 +25,16 @@
                                 <span>Overview</span>
                             </a>
                         </li>
+                        @if(Auth::user()->hasRole(['admin']))
+                            <li class="nav-item  active ">
+                                <a class="nav-link" href="{{url('/users')}}">
+                                    <span class="sidebar-icon"><span class="fas fa-user"></span></span>
+                                    <span>User Management</span>
+                                </a>
+                            </li>
+                        @endif
                     </ul>
+
+
                 </div>
             </nav>

@@ -15,7 +15,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>WISE Study - {{ $pageTitle }}</title>
+    <title>WISE Study - {{ $pageTitle ?? ''}}</title>
 
     <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
     <script src="{{asset('js/jAlert.min.js')}}"></script>
@@ -61,7 +61,7 @@
         </div>
     </nav>
 
-    <div class="container-fluid bg-soft">
+    <div class="container-fluid bg-soft" style="min-height: 650px;">
         <div class="row">
             <div class="col-12">
                 @include('layouts.partials.sidebar')
@@ -72,6 +72,8 @@
             </div>
         </div>
     </div>
+
+    <br/>
 
 @include('layouts.partials.footer')
 <!--===============================================================================================-->

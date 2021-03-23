@@ -115,6 +115,7 @@
       <excludeFolder url="file://$MODULE_DIR$/www/vendor/laravel/helpers" />
       <excludeFolder url="file://$MODULE_DIR$/www/vendor/jeremykenedy/laravel-roles" />
       <excludeFolder url="file://$MODULE_DIR$/www/vendor/laravelcollective/html" />
+      <excludeFolder url="file://$MODULE_DIR$/www/vendor/jeremykenedy/laravel-users" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
