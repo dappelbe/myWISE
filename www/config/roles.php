@@ -147,7 +147,7 @@ return [
     'rolesGuiCreateNewPermissionsMiddleware'     => env('ROLES_GUI_CREATE_PERMISSION_MIDDLEWARE_TYPE', 'admin'), // admin, XXX. ... or perms.XXX
 
     // The parent blade file
-    'bladeExtended'                 => env('ROLES_GUI_BLADE_EXTENDED', 'layouts.app'),
+    'bladeExtended'                 => env('ROLES_GUI_BLADE_EXTENDED', 'layouts.secured'),
 
     // Blade Extension Placement
     'bladePlacement'                => env('ROLES_GUI_BLADE_PLACEMENT', 'yield'),
