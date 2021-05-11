@@ -7,6 +7,7 @@
         <div class="col-12">
             <div class="alert alert-danger text-center">
                 <h4 class="">This page contains patient identifiable data, do NOT show to unauthorised people</h4>
+                {{route('users.create')}}
             </div>
         </div>
     </div>

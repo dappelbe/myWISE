@@ -14,8 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('users/create2/{pk}/{api_token}', 'AddUserController@create2')->name('users.create2');
+
+
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::post('users/create', 'AddUserController@create');
+Route::post('users/create', 'AddUserController@create')->name('users.create');
+
